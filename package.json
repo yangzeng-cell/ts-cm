@@ -8,7 +8,8 @@
     "lint": "vue-cli-service lint",
     "prettier": "prettier --write .",
     "prepare": "husky install",
-    "test":""
+    "commit":"cz",
+    "test": ""
   },
   "dependencies": {
     "axios": "^0.26.1",
@@ -31,6 +32,7 @@
     "@vue/eslint-config-typescript": "^9.1.0",
     "coderwhy": "^1.1.4",
     "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -42,5 +44,10 @@
     "typescript": "~4.5.5",
     "unplugin-auto-import": "^0.6.1",
     "unplugin-vue-components": "^0.17.21"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
